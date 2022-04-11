@@ -6,7 +6,7 @@ extern TwoWire Wire1;
 void setup()
 {
   Wire1.begin(); // Wire communication begin
-  Serial.begin(115200); // The baudrate of Serial monitor is set in 9600
+  Serial.begin(115200); // The baudrate of Serial monitor is set in 115200
   while (!Serial); // Waiting for Serial Monitor
   Serial.println("\nI2C Scanner");
 }
@@ -21,9 +21,6 @@ void loop()
   nDevices = 0;
   for (address = 1; address < 127; address++ )
   {
-    // The i2c_scanner uses the return value of
-    // the Write.endTransmisstion to see if
-    // a device did acknowledge to the address.
     Wire1.beginTransmission(address);
     error = Wire1.endTransmission();
 
@@ -49,5 +46,5 @@ void loop()
   else
     Serial.println("done\n");
 
-  delay(500); // wait 2 seconds for the next I2C scan
+  delay(2000); // wait 2 seconds for the next I2C scan
 }
