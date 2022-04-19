@@ -1,5 +1,8 @@
 #include <AS5600.h>
+#include <USBHost_t36.h>      // to enable 5V output in teensy 4.1
+
 AMS_5600 ams5600;
+USBHost myusb;
 
 float absPos, incrPos;
 float prevA = 0;
@@ -9,7 +12,8 @@ int counter = 0;
 void setup()
 {
   Serial.begin(115200);
-  Wire.begin();
+  Wire.begin();  
+  myusb.begin();
   absPos = ams5600.getRawAngle()*(float)360/4096;
   prevA = absPos; 
 }
