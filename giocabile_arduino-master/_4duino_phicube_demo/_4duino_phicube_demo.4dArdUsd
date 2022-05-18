@@ -1,0 +1,564 @@
+﻿Version     0.0
+Platform    4Duino-P
+PlatRes     240x320
+Depends
+end
+Options
+    Arduino_uSD
+    Speed                        9600
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  0
+    DestBank                     0
+    MainForm                     0
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 No
+    MaxString                    75
+    ComPort                      0
+    ComTX1pinIdx                 0
+    ComRX1pinIdx                 0
+end
+Form
+    Name                         Form1
+    Alias                        Form1
+    Bgtype                       Color
+    Color                        clWhite
+    Image                        demo_logo.png
+    Source.Height                650
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 568
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton1
+    Alias                        Winbutton1
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            Yes
+    Bevel                        Yes
+    BevelColor                   BLACK
+    Caption                      HOME
+    Color                        DARKGRAY
+    Font.Color                   BLACK
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       62
+    Left                         8
+    Matrix                       -1
+    Momentary                    No
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        X
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         LIME
+    StatusWhenOn.Caption         V
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          252
+    Width                        227
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Image
+    Name                         Image1
+    Alias                        Image1
+    Height                       319
+    Image                        welcome_logo.png
+    Left                         0
+    Source.Height                650
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 568
+    Top                          1
+    Width                        240
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Form
+    Name                         Form2
+    Alias                        Form2
+    Bgtype                       Color
+    Color                        clWhite
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext1
+    Alias                        Statictext1
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      'PhiCube homing in progess! WAIT'
+    Color                        BLACK
+    Font.Color                   BLACK
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       124
+    Left                         48
+    Top                          44
+    Transparent                  Yes
+    Width                        146
+    WordWrap                     Yes
+end
+Image
+    Name                         Image2
+    Alias                        Image2
+    Height                       103
+    Image                        demo_logo.png
+    Left                         68
+    Source.Height                499
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 472
+    Top                          184
+    Width                        101
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Form
+    Name                         Form3
+    Alias                        Form3
+    Bgtype                       Color
+    Color                        clWhite
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton2
+    Alias                        Winbutton2
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            Yes
+    Bevel                        Yes
+    BevelColor                   BLACK
+    Caption                      1
+    Color                        DARKGRAY
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       58
+    Left                         44
+    Matrix                       -1
+    Momentary                    No
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        X
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         LIME
+    StatusWhenOn.Caption         V
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          100
+    Width                        64
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton3
+    Alias                        Winbutton3
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            Yes
+    Bevel                        Yes
+    BevelColor                   BLACK
+    Caption                      2
+    Color                        DARKGRAY
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       58
+    Left                         128
+    Matrix                       -1
+    Momentary                    No
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        X
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         LIME
+    StatusWhenOn.Caption         V
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          100
+    Width                        64
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton4
+    Alias                        Winbutton4
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            Yes
+    Bevel                        Yes
+    BevelColor                   BLACK
+    Caption                      3
+    Color                        DARKGRAY
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       58
+    Left                         44
+    Matrix                       -1
+    Momentary                    No
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        X
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         LIME
+    StatusWhenOn.Caption         V
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          168
+    Width                        64
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton5
+    Alias                        Winbutton5
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            Yes
+    Bevel                        Yes
+    BevelColor                   BLACK
+    Caption                      4
+    Color                        DARKGRAY
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       58
+    Left                         128
+    Matrix                       -1
+    Momentary                    No
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        X
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         LIME
+    StatusWhenOn.Caption         V
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          168
+    Width                        64
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton6
+    Alias                        Winbutton6
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            Yes
+    Bevel                        Yes
+    BevelColor                   BLACK
+    Caption                      5
+    Color                        DARKGRAY
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       58
+    Left                         44
+    Matrix                       -1
+    Momentary                    No
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        X
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         LIME
+    StatusWhenOn.Caption         V
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          236
+    Width                        64
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton7
+    Alias                        Winbutton7
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            Yes
+    Bevel                        Yes
+    BevelColor                   BLACK
+    Caption                      6
+    Color                        DARKGRAY
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       58
+    Left                         128
+    Matrix                       -1
+    Momentary                    No
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        X
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         LIME
+    StatusWhenOn.Caption         V
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          236
+    Width                        64
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Image
+    Name                         Image3
+    Alias                        Image3
+    Height                       66
+    Image                        demo_logo.png
+    Left                         88
+    Source.Height                499
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 472
+    Top                          16
+    Width                        65
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Form
+    Name                         Form4
+    Alias                        Form4
+    Bgtype                       Color
+    Color                        clWhite
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext2
+    Alias                        Statictext2
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      'ERROR DETECTED Please restart device'
+    Color                        RED
+    Font.Color                   clRed
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       155
+    Left                         40
+    Top                          84
+    Transparent                  Yes
+    Width                        158
+    WordWrap                     Yes
+end
+Form
+    Name                         Form5
+    Alias                        Form5
+    Bgtype                       Color
+    Color                        clWhite
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Image
+    Name                         Image4
+    Alias                        Image4
+    Height                       102
+    Image                        demo_logo.png
+    Left                         72
+    Source.Height                499
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 472
+    Top                          184
+    Width                        100
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext3
+    Alias                        Statictext3
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      'PhiCube initialization in progress. WAIT'
+    Color                        BLACK
+    Font.Color                   BLACK
+    Font.Effects                 []
+    Font.Name                    'Cooper Black'
+    Font.Size                    20
+    Font.Style                   []
+    Height                       124
+    Left                         28
+    Top                          44
+    Transparent                  Yes
+    Width                        182
+    WordWrap                     Yes
+end

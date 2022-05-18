@@ -1,0 +1,14 @@
+"Winbutton1" 0000 0000 08 FC
+"Image1" B800 0001 00 01
+"Statictext1" 1000 0004 30 2C
+"Image2" 9E00 0004 44 B8
+"Winbutton2" F000 0004 2C 64
+"Winbutton3" 6600 0005 80 64
+"Winbutton4" DC00 0005 2C A8
+"Winbutton5" 5200 0006 80 A8
+"Winbutton6" C800 0006 2C EC
+"Winbutton7" 3E00 0007 80 EC
+"Image3" B400 0007 58 10
+"Statictext2" D600 0007 28 54
+"Image4" 9600 0008 48 B8
+"Statictext3" E600 0008 1C 2C

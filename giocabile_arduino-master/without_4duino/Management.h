@@ -1,0 +1,62 @@
+#ifndef MANAGEMENT_H
+#define MANAGEMENT_H
+
+#include <stdint.h>
+
+//check github push
+typedef enum {
+  ON,
+  IDLE,
+  ERROR,
+} LLState;
+
+typedef enum {
+  NOT_HOMED,
+  CURRENTLY_HOMING,
+  HOMED,
+  INITIALIZING,
+  INITIALIZED,
+  IN_ERROR,
+} HLState;
+
+typedef enum {
+  POSITION,
+  VELOCITY,
+  IMPEDANCE,
+  HOMING,
+  NO_MODE,
+} LLMode;
+
+typedef enum {
+  CONFIGURATION_1,
+  CONFIGURATION_2,
+  CONFIGURATION_3,
+  CONFIGURATION_4,
+  CONFIGURATION_5,
+  CONFIGURATION_6,
+  NO_CONTROL,
+} HLMode;
+
+typedef enum{
+  EMERGENCY,
+  MOTOR1_ERROR,
+  MOTOR2_ERROR,
+  INCOHERENCE_ERROR,
+  NO_ERROR,
+} Error;
+
+typedef enum {
+  I2C_ERROR,
+  I2C_SUCCESS,
+  I2C_RESET,
+  I2C_HOME,
+  I2C_CONFIGURATION_1,
+  I2C_CONFIGURATION_2,
+  I2C_CONFIGURATION_3,
+  I2C_CONFIGURATION_4,
+  I2C_CONFIGURATION_5,
+  I2C_CONFIGURATION_6,
+} I2Cmsg;
+
+
+#endif // MANAGEMENT_H
